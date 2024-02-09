@@ -11,5 +11,12 @@ git clone https://github.com/ankitdotpy/pixtwin.git
 cd pixtwin
 python3 -m venv venv
 source venv/bin/activate
-# to be continued.
+pip install -r requirements.txt
+cd pixtwin
+touch .env # paste your elasticsearch cloud id and api key in this file
+python3 -m index_es.py
+flask run
 ```
+
+### To Do
+embeddings are not good, need better model for that

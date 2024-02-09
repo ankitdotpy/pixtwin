@@ -1,6 +1,6 @@
 import os
 import time
-
+from pprint import pprint
 from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 
@@ -11,13 +11,13 @@ API_KEY = os.environ['ELASTIC_API_KEY']
 
 class Search:
     def __init__(self):
+        self.index = 'pixtwin'
         self.es = Elasticsearch(cloud_id=CLOUD_ID,api_key=API_KEY)
         client_info = self.es.info()
         print('Connected to Elasticsearch!')
         pprint(client_info)
 
     def create_index(self):
-        self.index = 'pixtwin'
 
         body = {
             'mappings': {
