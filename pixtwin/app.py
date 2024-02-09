@@ -25,7 +25,6 @@ def index():
     if request.method == 'POST':
         if 'image' in request.files:
             image_file = request.files['image']
-            print(image_file)
             image_path = 'uploads/' + image_file.filename
             image_file.save(image_path)
             query_vector = encode_image(image_path)
@@ -34,7 +33,6 @@ def index():
                 'url': hit['_source']['image'],
                 'score': hit['_score']
             } for hit in result['hits']['hits']]
-            pprint(images)
 
     return render_template('index.html', images=images)
 
