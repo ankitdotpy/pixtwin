@@ -27,7 +27,7 @@ class Search:
                     },
                     'image_vector': {
                         'type': 'dense_vector',
-                        'dims': 768
+                        'dims': 512
                     }
                 }
             }
