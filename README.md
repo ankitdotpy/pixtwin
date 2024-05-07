@@ -2,7 +2,7 @@ PixTwin
 ---
 PixTwin is a simple image search engine for discovering visual twins pictures. Simply upload an image, and PixTwin scours its extensive database to find visually similar images.
 
-![](demo/demo.mkv)
+[![Demo]](demo/demo.mkv)
 
 ### Requirements
 Refer `requirements.txt`
@@ -15,6 +15,7 @@ git clone https://github.com/ankitdotpy/pixtwin.git
 2. Create a virtual environment and install dependencies
 ```sh
 cd pixtwin
+touch .env # add your elasticsearch api key and cloud id here
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
