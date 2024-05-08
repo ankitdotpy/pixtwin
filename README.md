@@ -2,7 +2,7 @@ PixTwin
 ---
 PixTwin is a simple image search engine for discovering visual twins pictures. Simply upload an image, and PixTwin scours its extensive database to find visually similar images.
 
-[![Demo]]([demo/demo.mkv](https://www.youtube.com/watch?v=k20J3KcZYeU))
+[![Demo]](https://www.youtube.com/watch?v=k20J3KcZYeU)
 
 ### Requirements
 Refer `requirements.txt`
